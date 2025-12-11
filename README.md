@@ -1,31 +1,65 @@
-# GDG PUP Pomodoro Timer
+# GDG PUP Webverse vol. 2: JavaScript & DOM Manipulation - Boilerplate
 
-A small Pomodoro timer built for the GDG PUP JavaScript study jam. It demonstrates DOM manipulation, state management, and modular JS in a single, easy-to-read `main.js`.
+## ❓ What is the purpose of this repository?
 
-## What it does
+This is the starter code for the **Live Coding Session**. During the session, we will populate these files to build a **Pomodoro Timer** featuring:
 
-- Focus/Short Break/Long Break modes with preset durations (25/5/15 minutes).
-- Start, Pause, and Reset controls with live countdown.
-- Automatic mode switching after each session; tracks completed focus sessions.
-- Mode buttons highlight the active mode.
+- ⏱️ Focus, Short Break, and Long Break modes
+- ▶️ Start/Pause/Reset controls with live countdown
+- 🔄 SVG progress ring animation
+- 🎨 Dynamic theme colors based on mode
+- 📊 Session tracking
 
-## Quick start
+## 📂 What are these files for?
 
-1) Clone or download this repo.
-2) Open `src/pomodoro.html` in your browser (or with VS Code Live Server).
-3) Click **Start** to begin; **Pause**/**Reset** and mode buttons respond immediately.
+| File | Description |
+|------|-------------|
+| `pomodoro.html` | Contains the complete HTML structure, font links, and button elements. |
+| `styles/pomodoro.css` | Contains CSS variables, GDG color palette, and all styling (pre-built). |
+| `js/main.js` | **The main file we'll code together!** Contains the skeleton structure with comments and hints. |
 
-## Project layout
+## 📥 How to get your own copy?
 
-- `src/pomodoro.html` — the page markup.
-- `src/styles/pomodoro.css` — styling for the timer UI.
-- `src/js/main.js` — all timer logic, state, and UI wiring (single file).
-- `src/__tests__/pomodoro.test.js` — logic tests for timer/task utilities.
+### Option 1: Download ZIP (Easiest)
 
-## Development notes
+1. Click the green **Code** button at the top of this page.
+2. Select **Download ZIP**.
+3. Extract (Unzip) the downloaded file to a folder on your computer.
 
-- Adjust durations in `DURATIONS` inside `src/js/main.js`.
-- The timer state and helpers are exported from `src/js/main.js` for reuse.
-- Tests are written for Jest-style runners; point your test runner at `src/__tests__/pomodoro.test.js` if you have Jest set up.
+### Option 2: Git Clone (For those with Git installed)
 
-Happy coding!
+Open your terminal (Command Prompt or PowerShell) and run:
+
+```bash
+git clone https://github.com/gdg-pup-webdev/sj2-boilerplate.git
+```
+
+## 🏃‍♂️ How do I start?
+
+1. Open this folder in **VS Code**.
+2. Right-click `pomodoro.html` and select **"Open with Live Server"**.
+3. Follow along with the speaker!
+
+## 🧠 What we'll learn
+
+During this session, we'll cover the following JavaScript concepts:
+
+- **Variables & Constants** - Storing timer durations and state
+- **DOM Manipulation** - Selecting and updating HTML elements
+- **Functions** - Creating reusable code blocks
+- **Event Listeners** - Responding to button clicks
+- **setInterval / clearInterval** - Creating the countdown timer
+- **Conditionals** - Handling different timer modes
+- **CSS Custom Properties** - Changing theme colors with JavaScript
+
+## 📝 Code Structure Overview
+
+The `js/main.js` file is organized into 5 sections:
+
+1. **Variables & Configuration** - Timer durations and state variables
+2. **DOM Elements** - Selecting buttons and display elements
+3. **Timer Functions** - `updateTimerDisplay()`, `startTimer()`, `resetTimer()`, `setMode()`
+4. **Event Listeners** - Connecting buttons to functions
+5. **Initialization** - Starting the app
+
+Happy coding! 🎉
